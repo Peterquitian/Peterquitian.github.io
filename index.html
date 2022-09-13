@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Encriptador Alura</title>
+    </head>
+    <body>
+        <header>
+            <section class="Panel-Logo">
+                <img src="Imagenes/Logo/Logo.png" alt="Logo Alura" id="logo">
+            </section>
+        </header>
+
+        <main>
+            <section class="zona1">
+                <div class="panel-Input">
+                    <form>
+                        <textarea id="texto-Encriptar" class="entrada-texto-zona1" placeholder="Ingrese texto aquí" required></textarea>
+                        <div class="panel-Botones">
+                            <div class="encriptar-texto-guia">
+                                <img src="Imagenes/Vector.png" alt="!" class="imagenen-acompañantes-texto">
+                                <p>Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <input type="button" value="Encriptar" class="boton-Encriptar" onclick="btn_encriptar()">
+                            <input type="button" value="Desencriptar" class="boton-Desencriptar" onclick="btn_desencriptar()">
+                        </div>   
+                    </form>
+                </div>
+            </section>
+            <section class="zona2">
+                <div class="panel-Salida">
+                    <form>
+                        <div id="informacion-zona2">
+                            <img src="imagenes/Muñeco.png" alt="Encriptador" id="imagen-encriptador">
+                            <h2>Ningún mensaje fue encontrado</h2>
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                        <textarea id="texto-Encriptado" class="cajadetexto-zona2" readonly required disabled></textarea>
+                        <input type="button" value="Copiar" id="boton-copiar" class="boton-copiar" onclick="btn_copiar()">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>Contacto: <strong>peterquitian2@gmail.com</strong></p>
+                <p><strong>Peterquitian 2022</strong></p>
+            </div>
+        </footer>
+        <script src="encriptador.js"></script>
+    </body>
+</html>
